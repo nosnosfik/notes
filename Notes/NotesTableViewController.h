@@ -1,5 +1,5 @@
 //
-//  NotesTableView.h
+//  NotesTableViewController.h
 //  Notes
 //
 //  Created by Nikita Taranov on 11/8/16.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NotesTableView : UITableViewController
+@interface NotesTableViewController : UITableViewController
 
 
 

@@ -13,7 +13,7 @@
         <!--List-->
         <scene sceneID="pLT-yE-ghj">
             <objects>
-                <tableViewController id="dAo-Wb-UXm" customClass="NotesTableView" sceneMemberID="viewController">
+                <tableViewController id="dAo-Wb-UXm" customClass="NotesTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="1CC-co-3FK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,7 +47,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="frb-2D-6Lw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="881" y="96"/>
+            <point key="canvasLocation" x="892" y="96"/>
         </scene>
         <!--Note-->
         <scene sceneID="Nse-h9-zDK">
@@ -129,7 +129,6 @@
         <!--Navigation Controller-->
         <scene sceneID="Jl4-2B-kz9">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="90s-Wb-w8i" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c3n-MV-IOB" sceneMemberID="viewController">
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -144,6 +143,7 @@
                         <segue destination="dAo-Wb-UXm" kind="relationship" relationship="rootViewController" id="WK1-qh-hpC"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="90s-Wb-w8i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="172" y="95.802098950524751"/>
         </scene>

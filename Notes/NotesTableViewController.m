@@ -1,15 +1,16 @@
 //
-//  NotesTableView.m
+//  NotesTableViewController.m
 //  Notes
 //
 //  Created by Nikita Taranov on 11/8/16.
 //  Copyright © 2016 Nikita Taranov. All rights reserved.
 //
 
-#import "NotesTableView.h"
+#import "NotesTableViewController.h"
 #import "NoteViewController.h"
+#import "UserDataProcessing.h"
 
-@interface NotesTableView ()
+@interface NotesTableViewController ()
 
 @property (strong,nonatomic) NSDictionary *dataDict;
 @property (strong,nonatomic) NSString *segueTitleString;
@@ -17,7 +18,7 @@
 
 @end
 
-@implementation NotesTableView
+@implementation NotesTableViewController
 
 #pragma mark - Table view data source
 
@@ -37,11 +38,11 @@
 
 }
 
--(void)reloadData{
+-(void)reloadData {
     
-    NSString *userNotes = [[NSBundle mainBundle] bundleIdentifier];
+    UserDataProcessing *sharedManager = [UserDataProcessing sharedManager];
 
-    self.dataDict = [[NSUserDefaults standardUserDefaults] persistentDomainForName:userNotes];
+    self.dataDict = [sharedManager readDataFromUserDefaults];
 
     [self.tableView reloadData];
     

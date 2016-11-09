@@ -22,8 +22,7 @@
     
 }
 
-- (void)showWithAnimation
-{
+- (void)showWithAnimation {
     self.view.transform = CGAffineTransformMakeScale(1.3, 1.3);
     self.view.alpha = 0;
     [UIView animateWithDuration:.25 animations:^{
@@ -36,17 +35,11 @@
         }];
 }
 
-- (void)showInView:(UIView *)currentView animated:(BOOL)animated
-{
+- (void)showInView:(UIView *)currentView animated:(BOOL)animated {
     [currentView addSubview:self.view];
     if (animated) {
         [self showWithAnimation];
     }
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

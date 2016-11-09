@@ -7,8 +7,9 @@
 //
 
 #import "NoteViewController.h"
-#import "NotesTableView.h"
+#import "NotesTableViewController.h"
 #import "PopUpViewController.h"
+#import "UserDataProcessing.h"
 
 @interface NoteViewController ()
 
@@ -21,21 +22,14 @@
     [self.titleTextField resignFirstResponder];
     [self.noteDescription resignFirstResponder];
     
-    NSString *titleText = [self.titleTextField text];
-    NSString *noteDescription  = [self.noteDescription text];
+    UserDataProcessing *sharedManager = [UserDataProcessing sharedManager];
     
-    if ([self.titleTextField.text length] < 1) {
-        titleText = [[noteDescription componentsSeparatedByString:@" "] objectAtIndex:0];
-    }
-    
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    
-    [defaults setObject:noteDescription forKey:titleText];
-    [defaults synchronize];
-    
+    [sharedManager saveDataFromTitleTextField:self.titleTextField andDataFromNote:self.noteDescription];
+
     [[NSNotificationCenter defaultCenter] postNotificationName:@"reload_data" object:self];
     
     PopUpViewController *vc = [[PopUpViewController alloc] initWithNibName:@"PopUpViewController" bundle:nil];;
+    
     [vc showInView:self.view animated:YES];
  
 }
@@ -47,9 +41,5 @@
     self.noteDescription.text = self.noteString;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    
-}
 
 @end

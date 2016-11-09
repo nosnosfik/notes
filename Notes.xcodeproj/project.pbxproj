@@ -8,17 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		C628926A1DD2A79300A2BAFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C628925A1DD2A79300A2BAFB /* Assets.xcassets */; };
-		C628926C1DD2A79300A2BAFB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C628925C1DD2A79300A2BAFB /* Info.plist */; };
 		C62892721DD2A79300A2BAFB /* PopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C62892661DD2A79300A2BAFB /* PopUpViewController.xib */; };
-		C62892761DD2A7B700A2BAFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62892741DD2A7B700A2BAFB /* LaunchScreen.storyboard */; };
-		C62892771DD2A7B700A2BAFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62892751DD2A7B700A2BAFB /* Main.storyboard */; };
 		C62892781DD2A7F900A2BAFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C62892591DD2A79300A2BAFB /* AppDelegate.m */; };
-		C62892791DD2A7FE00A2BAFB /* NotesTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C628925F1DD2A79300A2BAFB /* NotesTableView.m */; };
-		C628927A1DD2A80100A2BAFB /* NoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62892611DD2A79300A2BAFB /* NoteViewController.m */; };
+		C62892791DD2A7FE00A2BAFB /* NotesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C628925F1DD2A79300A2BAFB /* NotesTableViewController.m */; };
 		C628927B1DD2A80300A2BAFB /* NSMutableArray+Operations.m in Sources */ = {isa = PBXBuildFile; fileRef = C62892631DD2A79300A2BAFB /* NSMutableArray+Operations.m */; };
 		C628927C1DD2A80600A2BAFB /* PopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62892651DD2A79300A2BAFB /* PopUpViewController.m */; };
-		C628927D1DD2A80900A2BAFB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62892681DD2A79300A2BAFB /* ViewController.m */; };
 		C628927E1DD2A80D00A2BAFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C628925D1DD2A79300A2BAFB /* main.m */; };
+		C6F0CAE41DD351D00070C605 /* UserDataProcessing.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F0CAE31DD351D00070C605 /* UserDataProcessing.m */; };
+		C6F0CAE51DD356770070C605 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62892751DD2A7B700A2BAFB /* Main.storyboard */; };
+		C6F0CAE61DD3567A0070C605 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62892741DD2A7B700A2BAFB /* LaunchScreen.storyboard */; };
+		C6F0CAE71DD357970070C605 /* NoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62892611DD2A79300A2BAFB /* NoteViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +25,9 @@
 		C62892581DD2A79300A2BAFB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Notes/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		C62892591DD2A79300A2BAFB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Notes/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		C628925A1DD2A79300A2BAFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Notes/Assets.xcassets; sourceTree = SOURCE_ROOT; };
-		C628925C1DD2A79300A2BAFB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Notes/Info.plist; sourceTree = SOURCE_ROOT; };
 		C628925D1DD2A79300A2BAFB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Notes/main.m; sourceTree = SOURCE_ROOT; };
-		C628925E1DD2A79300A2BAFB /* NotesTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotesTableView.h; path = Notes/NotesTableView.h; sourceTree = SOURCE_ROOT; };
-		C628925F1DD2A79300A2BAFB /* NotesTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NotesTableView.m; path = Notes/NotesTableView.m; sourceTree = SOURCE_ROOT; };
+		C628925E1DD2A79300A2BAFB /* NotesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotesTableViewController.h; path = Notes/NotesTableViewController.h; sourceTree = SOURCE_ROOT; };
+		C628925F1DD2A79300A2BAFB /* NotesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NotesTableViewController.m; path = Notes/NotesTableViewController.m; sourceTree = SOURCE_ROOT; };
 		C62892601DD2A79300A2BAFB /* NoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteViewController.h; path = Notes/NoteViewController.h; sourceTree = SOURCE_ROOT; };
 		C62892611DD2A79300A2BAFB /* NoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteViewController.m; path = Notes/NoteViewController.m; sourceTree = SOURCE_ROOT; };
 		C62892621DD2A79300A2BAFB /* NSMutableArray+Operations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+Operations.h"; path = "Notes/NSMutableArray+Operations.h"; sourceTree = SOURCE_ROOT; };
@@ -37,10 +35,11 @@
 		C62892641DD2A79300A2BAFB /* PopUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PopUpViewController.h; path = Notes/PopUpViewController.h; sourceTree = SOURCE_ROOT; };
 		C62892651DD2A79300A2BAFB /* PopUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PopUpViewController.m; path = Notes/PopUpViewController.m; sourceTree = SOURCE_ROOT; };
 		C62892661DD2A79300A2BAFB /* PopUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PopUpViewController.xib; path = Notes/PopUpViewController.xib; sourceTree = SOURCE_ROOT; };
-		C62892671DD2A79300A2BAFB /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Notes/ViewController.h; sourceTree = SOURCE_ROOT; };
-		C62892681DD2A79300A2BAFB /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Notes/ViewController.m; sourceTree = SOURCE_ROOT; };
-		C62892741DD2A7B700A2BAFB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../Notes/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C62892751DD2A7B700A2BAFB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Notes/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C62892741DD2A7B700A2BAFB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Notes/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		C62892751DD2A7B700A2BAFB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Notes/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		C628927F1DD2A8FF00A2BAFB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Notes/Info.plist; sourceTree = SOURCE_ROOT; };
+		C6F0CAE21DD351D00070C605 /* UserDataProcessing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserDataProcessing.h; path = Notes/UserDataProcessing.h; sourceTree = SOURCE_ROOT; };
+		C6F0CAE31DD351D00070C605 /* UserDataProcessing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserDataProcessing.m; path = Notes/UserDataProcessing.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,20 +75,20 @@
 				C62892581DD2A79300A2BAFB /* AppDelegate.h */,
 				C62892591DD2A79300A2BAFB /* AppDelegate.m */,
 				C628925A1DD2A79300A2BAFB /* Assets.xcassets */,
-				C628925E1DD2A79300A2BAFB /* NotesTableView.h */,
-				C628925F1DD2A79300A2BAFB /* NotesTableView.m */,
+				C628925E1DD2A79300A2BAFB /* NotesTableViewController.h */,
+				C628925F1DD2A79300A2BAFB /* NotesTableViewController.m */,
 				C62892601DD2A79300A2BAFB /* NoteViewController.h */,
 				C62892611DD2A79300A2BAFB /* NoteViewController.m */,
+				C6F0CAE21DD351D00070C605 /* UserDataProcessing.h */,
+				C6F0CAE31DD351D00070C605 /* UserDataProcessing.m */,
 				C62892621DD2A79300A2BAFB /* NSMutableArray+Operations.h */,
 				C62892631DD2A79300A2BAFB /* NSMutableArray+Operations.m */,
 				C62892641DD2A79300A2BAFB /* PopUpViewController.h */,
 				C62892651DD2A79300A2BAFB /* PopUpViewController.m */,
 				C62892661DD2A79300A2BAFB /* PopUpViewController.xib */,
-				C62892671DD2A79300A2BAFB /* ViewController.h */,
-				C62892681DD2A79300A2BAFB /* ViewController.m */,
 				C62892741DD2A7B700A2BAFB /* LaunchScreen.storyboard */,
 				C62892751DD2A7B700A2BAFB /* Main.storyboard */,
-				C628925C1DD2A79300A2BAFB /* Info.plist */,
+				C628927F1DD2A8FF00A2BAFB /* Info.plist */,
 				C628922C1DD1ED8500A2BAFB /* Supporting Files */,
 			);
 			name = Notes;
@@ -163,10 +162,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6F0CAE61DD3567A0070C605 /* LaunchScreen.storyboard in Resources */,
+				C6F0CAE51DD356770070C605 /* Main.storyboard in Resources */,
 				C628926A1DD2A79300A2BAFB /* Assets.xcassets in Resources */,
-				C628926C1DD2A79300A2BAFB /* Info.plist in Resources */,
-				C62892771DD2A7B700A2BAFB /* Main.storyboard in Resources */,
-				C62892761DD2A7B700A2BAFB /* LaunchScreen.storyboard in Resources */,
 				C62892721DD2A79300A2BAFB /* PopUpViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,12 +176,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6F0CAE71DD357970070C605 /* NoteViewController.m in Sources */,
 				C628927E1DD2A80D00A2BAFB /* main.m in Sources */,
-				C628927D1DD2A80900A2BAFB /* ViewController.m in Sources */,
 				C628927C1DD2A80600A2BAFB /* PopUpViewController.m in Sources */,
 				C628927B1DD2A80300A2BAFB /* NSMutableArray+Operations.m in Sources */,
-				C628927A1DD2A80100A2BAFB /* NoteViewController.m in Sources */,
-				C62892791DD2A7FE00A2BAFB /* NotesTableView.m in Sources */,
+				C6F0CAE41DD351D00070C605 /* UserDataProcessing.m in Sources */,
+				C62892791DD2A7FE00A2BAFB /* NotesTableViewController.m in Sources */,
 				C62892781DD2A7F900A2BAFB /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +320,7 @@
 				C62892421DD1ED8500A2BAFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

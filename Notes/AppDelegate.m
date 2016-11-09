@@ -17,26 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    
-    
-    NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:20];
-    
-    for( int i = 0; i < 20; ++i )
-    {
-        [array addObject:[NSNumber numberWithInt:arc4random_uniform(50)]];
-    }
-
-    NSLog(@"%@", array);
-    
-    [array swapObjectAtIndex:1 withObjectAtIndex:19];
-    
-    NSLog(@"%@", array);
-
-    [array shellSortWithKey:@"integerValue"];
-    
-    NSLog(@"%@", array);
-    
+  
     return YES;
 }
 
