@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopUpViewController">
+            <connections>
+                <outlet property="popUpView" destination="uQA-b5-LYF" id="sh5-5V-scJ"/>
+                <outlet property="view" destination="2mJ-V7-9fh" id="Q8G-Ey-S0e"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2mJ-V7-9fh">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uQA-b5-LYF">
+                    <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saved" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RxJ-1z-tYu">
+                            <rect key="frame" x="27" y="75" width="47" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="dQX-Ye-KL5"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Hdf-Yq-xoM">
+                            <rect key="frame" x="20" y="11" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="2TC-Om-oVf"/>
+                                <constraint firstAttribute="width" constant="60" id="Wk2-yn-5wU"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="0uB-FH-UC6"/>
+                        <constraint firstAttribute="bottom" secondItem="RxJ-1z-tYu" secondAttribute="bottom" constant="4" id="6tM-6W-3rn"/>
+                        <constraint firstItem="Hdf-Yq-xoM" firstAttribute="top" secondItem="uQA-b5-LYF" secondAttribute="top" constant="11" id="LVZ-ia-z6u"/>
+                        <constraint firstAttribute="trailing" secondItem="Hdf-Yq-xoM" secondAttribute="trailing" constant="20" id="PTz-u2-yBl"/>
+                        <constraint firstItem="RxJ-1z-tYu" firstAttribute="leading" secondItem="uQA-b5-LYF" secondAttribute="leading" constant="27" id="Vc8-aD-iYl"/>
+                        <constraint firstAttribute="height" constant="100" id="Vra-1B-dYo"/>
+                        <constraint firstItem="Hdf-Yq-xoM" firstAttribute="leading" secondItem="uQA-b5-LYF" secondAttribute="leading" constant="20" id="mfK-IO-JUa"/>
+                        <constraint firstAttribute="trailing" secondItem="RxJ-1z-tYu" secondAttribute="trailing" constant="26" id="s36-EK-tv7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="uQA-b5-LYF" firstAttribute="centerY" secondItem="2mJ-V7-9fh" secondAttribute="centerY" id="BIQ-Qy-foP"/>
+                <constraint firstItem="uQA-b5-LYF" firstAttribute="centerX" secondItem="2mJ-V7-9fh" secondAttribute="centerX" id="IEP-S4-PVa"/>
+                <constraint firstAttribute="trailing" secondItem="uQA-b5-LYF" secondAttribute="trailing" constant="137.5" id="JhI-VU-8c1"/>
+                <constraint firstItem="uQA-b5-LYF" firstAttribute="leading" secondItem="2mJ-V7-9fh" secondAttribute="leading" constant="137.5" id="Zvw-17-Pja"/>
+                <constraint firstItem="uQA-b5-LYF" firstAttribute="top" secondItem="2mJ-V7-9fh" secondAttribute="top" constant="283.5" id="hVf-zY-1HW"/>
+                <constraint firstAttribute="bottom" secondItem="uQA-b5-LYF" secondAttribute="bottom" constant="283.5" id="n1f-aZ-ZHX"/>
+            </constraints>
+            <point key="canvasLocation" x="-66.5" y="-158"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkIcon" width="200" height="200"/>
+    </resources>
+</document>
