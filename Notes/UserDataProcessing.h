@@ -8,12 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "UserData.h"
 
 @interface UserDataProcessing : NSObject
 
 + (id)sharedManager;
 
--(void) saveDataFromTitleTextField:(UITextField*)textField andDataFromNote:(UITextView*)noteField;
+-(void) saveData:(UserData*)userNote;
 -(NSDictionary*) readDataFromUserDefaults;
 
 

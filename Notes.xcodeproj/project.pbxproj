@@ -18,6 +18,7 @@
 		C6F0CAE51DD356770070C605 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62892751DD2A7B700A2BAFB /* Main.storyboard */; };
 		C6F0CAE61DD3567A0070C605 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C62892741DD2A7B700A2BAFB /* LaunchScreen.storyboard */; };
 		C6F0CAE71DD357970070C605 /* NoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C62892611DD2A79300A2BAFB /* NoteViewController.m */; };
+		C6F0CAED1DD3B7740070C605 /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F0CAEC1DD3B7740070C605 /* UserData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		C628927F1DD2A8FF00A2BAFB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Notes/Info.plist; sourceTree = SOURCE_ROOT; };
 		C6F0CAE21DD351D00070C605 /* UserDataProcessing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserDataProcessing.h; path = Notes/UserDataProcessing.h; sourceTree = SOURCE_ROOT; };
 		C6F0CAE31DD351D00070C605 /* UserDataProcessing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserDataProcessing.m; path = Notes/UserDataProcessing.m; sourceTree = SOURCE_ROOT; };
+		C6F0CAEB1DD3B7740070C605 /* UserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserData.h; path = Notes/UserData.h; sourceTree = SOURCE_ROOT; };
+		C6F0CAEC1DD3B7740070C605 /* UserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserData.m; path = Notes/UserData.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,8 @@
 				C628925F1DD2A79300A2BAFB /* NotesTableViewController.m */,
 				C62892601DD2A79300A2BAFB /* NoteViewController.h */,
 				C62892611DD2A79300A2BAFB /* NoteViewController.m */,
+				C6F0CAEB1DD3B7740070C605 /* UserData.h */,
+				C6F0CAEC1DD3B7740070C605 /* UserData.m */,
 				C6F0CAE21DD351D00070C605 /* UserDataProcessing.h */,
 				C6F0CAE31DD351D00070C605 /* UserDataProcessing.m */,
 				C62892621DD2A79300A2BAFB /* NSMutableArray+Operations.h */,
@@ -182,6 +187,7 @@
 				C628927B1DD2A80300A2BAFB /* NSMutableArray+Operations.m in Sources */,
 				C6F0CAE41DD351D00070C605 /* UserDataProcessing.m in Sources */,
 				C62892791DD2A7FE00A2BAFB /* NotesTableViewController.m in Sources */,
+				C6F0CAED1DD3B7740070C605 /* UserData.m in Sources */,
 				C62892781DD2A7F900A2BAFB /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,6 +10,7 @@
 #import "NotesTableViewController.h"
 #import "PopUpViewController.h"
 #import "UserDataProcessing.h"
+#import "UserData.h"
 
 @interface NoteViewController ()
 
@@ -24,7 +25,12 @@
     
     UserDataProcessing *sharedManager = [UserDataProcessing sharedManager];
     
-    [sharedManager saveDataFromTitleTextField:self.titleTextField andDataFromNote:self.noteDescription];
+    UserData *note = [UserData new];
+
+    note.noteTitle = self.titleTextField.text;
+    note.noteField = self.noteDescription.text;
+    
+    [sharedManager saveData:note];
 
     [[NSNotificationCenter defaultCenter] postNotificationName:@"reload_data" object:self];
     

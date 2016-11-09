@@ -19,21 +19,18 @@
     return sharedDataProcessing;
 }
 
--(void)saveDataFromTitleTextField:(UITextField *)textField andDataFromNote:(UITextView *)noteField{
-    
-    NSString *titleText = [textField text];
-    NSString *noteDescription  = [noteField text];
-    
-    if ([textField.text length] < 1) {
-        titleText = [[noteDescription componentsSeparatedByString:@" "] objectAtIndex:0];
+-(void)saveData:(UserData *)userNote {
+
+    if ([userNote.noteTitle length] == 0) {
+        userNote.noteTitle = [[userNote.noteField componentsSeparatedByString:@" "] objectAtIndex:0];
     }
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
-    [defaults setObject:noteDescription forKey:titleText];
+    [defaults setObject:userNote.noteField forKey:userNote.noteTitle];
     
     [defaults synchronize];
-    
+ 
 }
 
 -(NSDictionary*)readDataFromUserDefaults {
