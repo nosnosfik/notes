@@ -18,25 +18,21 @@
     
 }
 
-- (void)shellSortWithKey:(NSString *)key{
+- (void)shellSortWithKey:(NSString *)key {
     
-    NSInteger gap,i;
+    NSUInteger count = [self count];
     
-    for (gap = self.count/2; gap > 0; gap /=2) {
-        for (i = gap; i < self.count; i++) {
-            if ([self[i] integerValue] < [self[i-gap] integerValue]) {
-                NSInteger target = [self[i] integerValue];
-                NSInteger j = i - gap;
-                while (j >= 0 && [self[j] integerValue] > target) {
-                    self[j+gap] = self[j];
-                    j -= gap;
+    for (NSInteger i = count / 2; i > 0; i = i / 2) {
+        for (NSInteger j = i; j < count; j++) {
+            for (NSInteger k = j - i; k >= 0; k = k - i) {
+                if ([self[k + 1] valueForKey:key] >= [self[k] valueForKey:key]) {
+                    break;
                 }
-                
-                self[j+gap] = [NSNumber numberWithInteger:target];
+                else {
+                    [self exchangeObjectAtIndex:k withObjectAtIndex:(k + i)];
+                }
             }
-            
         }
-        
     }
     
 }
