@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -17,11 +17,11 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="2mJ-V7-9fh">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uQA-b5-LYF">
-                    <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
+                    <rect key="frame" x="110" y="234" width="100" height="100"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saved" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RxJ-1z-tYu">
                             <rect key="frame" x="27" y="75" width="47" height="21"/>
@@ -54,14 +54,10 @@
                 </view>
             </subviews>
             <constraints>
-                <constraint firstItem="uQA-b5-LYF" firstAttribute="centerY" secondItem="2mJ-V7-9fh" secondAttribute="centerY" id="BIQ-Qy-foP"/>
-                <constraint firstItem="uQA-b5-LYF" firstAttribute="centerX" secondItem="2mJ-V7-9fh" secondAttribute="centerX" id="IEP-S4-PVa"/>
-                <constraint firstAttribute="trailing" secondItem="uQA-b5-LYF" secondAttribute="trailing" constant="137.5" id="JhI-VU-8c1"/>
-                <constraint firstItem="uQA-b5-LYF" firstAttribute="leading" secondItem="2mJ-V7-9fh" secondAttribute="leading" constant="137.5" id="Zvw-17-Pja"/>
-                <constraint firstItem="uQA-b5-LYF" firstAttribute="top" secondItem="2mJ-V7-9fh" secondAttribute="top" constant="283.5" id="hVf-zY-1HW"/>
-                <constraint firstAttribute="bottom" secondItem="uQA-b5-LYF" secondAttribute="bottom" constant="283.5" id="n1f-aZ-ZHX"/>
+                <constraint firstItem="uQA-b5-LYF" firstAttribute="centerX" secondItem="2mJ-V7-9fh" secondAttribute="centerX" id="0qM-Y6-gYu"/>
+                <constraint firstItem="uQA-b5-LYF" firstAttribute="centerY" secondItem="2mJ-V7-9fh" secondAttribute="centerY" id="Q97-6I-J00"/>
             </constraints>
-            <point key="canvasLocation" x="-66.5" y="-158"/>
+            <point key="canvasLocation" x="-265" y="-170"/>
         </view>
     </objects>
     <resources>

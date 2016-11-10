@@ -27,6 +27,7 @@
     
     [self.tableView reloadData];
     
+    
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     [self.navigationController.navigationBar
      setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
@@ -87,7 +88,9 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         
-        [[NSUserDefaults standardUserDefaults] removeObjectForKey:[self.dataDict allKeys][indexPath.row]];
+        UserDataProcessing *sharedManager = [UserDataProcessing sharedManager];
+        
+        [sharedManager deleteDataForKey:[self.dataDict allKeys][indexPath.row]];
         
         [self reloadData];
     }

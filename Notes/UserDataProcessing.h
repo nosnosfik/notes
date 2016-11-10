@@ -16,6 +16,6 @@
 
 -(void) saveData:(UserData*)userNote;
 -(NSDictionary*) readDataFromUserDefaults;
-
+-(void)deleteDataForKey:(NSString*)key;
 
 @end

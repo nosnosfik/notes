@@ -41,4 +41,9 @@
     return dataDict;
 }
 
+-(void)deleteDataForKey:(NSString*)key{
+    
+ [[NSUserDefaults standardUserDefaults] removeObjectForKey:key];
+    
+}
 @end
