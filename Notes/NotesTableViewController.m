@@ -12,7 +12,7 @@
 
 @interface NotesTableViewController ()
 
-@property (strong,nonatomic) NSDictionary *dataDict;
+@property (strong,nonatomic) NSArray *dataArray;
 @property (strong,nonatomic) NSString *segueTitleString;
 @property (strong,nonatomic) NSString *segueDescriptionString;
 
@@ -43,7 +43,7 @@
     
     UserDataProcessing *sharedManager = [UserDataProcessing sharedManager];
 
-    self.dataDict = [sharedManager readDataFromUserDefaults];
+    self.dataArray = [sharedManager readDataFromUserDefaults];
 
     [self.tableView reloadData];
     
@@ -56,7 +56,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return [self.dataDict count];
+    return [self.dataArray count];
     
 }
 
@@ -65,9 +65,9 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"noteCell" forIndexPath:indexPath];
     
-    NSString *key = [self.dataDict allKeys][indexPath.row];
-
-    cell.textLabel.text = key;
+    UserData *userData = self.dataArray[indexPath.row];
+    
+    cell.textLabel.text = userData.noteTitle;
 
     return cell;
     
@@ -75,8 +75,10 @@
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    self.segueTitleString = [self.dataDict allKeys][indexPath.row];
-    self.segueDescriptionString = [self.dataDict allValues][indexPath.row];
+    UserData *userData = self.dataArray[indexPath.row];
+    
+    self.segueTitleString = userData.noteTitle;
+    self.segueDescriptionString = userData.noteField;
     [self performSegueWithIdentifier:@"getNote" sender:self];
     
 }
@@ -90,7 +92,9 @@
         
         UserDataProcessing *sharedManager = [UserDataProcessing sharedManager];
         
-        [sharedManager deleteDataForKey:[self.dataDict allKeys][indexPath.row]];
+        UserData *userData = self.dataArray[indexPath.row];
+        
+        [sharedManager deleteDataForKey:userData.noteTitle];
         
         [self reloadData];
     }

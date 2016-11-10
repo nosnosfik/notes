@@ -33,12 +33,25 @@
  
 }
 
--(NSDictionary*)readDataFromUserDefaults {
+-(NSArray*)readDataFromUserDefaults {
     
     NSString *userNotes = [[NSBundle mainBundle] bundleIdentifier];
     NSDictionary *dataDict = [[NSUserDefaults standardUserDefaults] persistentDomainForName:userNotes];
-
-    return dataDict;
+    
+    NSArray *allKeys =  [dataDict allKeys];
+    NSArray *allValues =  [dataDict allValues];
+    NSUInteger objectsCount = [allKeys count];
+    
+    NSMutableArray *userDataArray = [NSMutableArray new];
+    
+    for (int i = 0; i <objectsCount ; i++) {
+        UserData *userData = [UserData new];
+        userData.noteTitle = allKeys[i];
+        userData.noteField = allValues[i];
+        
+        [userDataArray addObject:userData];
+    }
+    return userDataArray;
 }
 
 -(void)deleteDataForKey:(NSString*)key{
